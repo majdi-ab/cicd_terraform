@@ -5,7 +5,7 @@ resource "aws_launch_template" "asg_webserver" {
   image_id               = "ami-09f85f3aaae282910"
   instance_type          = var.webserver_type
   vpc_security_group_ids = [var.kp_pb_sg]
-  key_name               = var.key
+  #key_name               = var.key
 
   tags = {
     Name = "webserver"
