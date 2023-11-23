@@ -4,6 +4,6 @@ terraform {
     region  = "us-east-2"
     profile = "default"
     key     = "XXXX"
-    bucket  = "cicdterraform1102"
+    bucket  = "cicdterraform1103"
   }
 }
