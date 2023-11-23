@@ -18,7 +18,7 @@ resource "aws_subnet" "kp_pb_sn" {
   vpc_id                  = aws_vpc.kp_vpc.id
   cidr_block              = var.pb_cidrs[count.index]
   map_public_ip_on_launch = true
-  availability_zone       = ["us-east-1a", "us-east-1b"][count.index]
+  availability_zone       = ["us-east-2a", "us-east-2b"][count.index]
 
   tags = {
     Name = "kp-pb_${count.index + 1}"
